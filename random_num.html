@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Random generator</title>
+
+</head>
+<body>
+<h1> Hello Welcome to the random Number generator page </h1> 
+<p> Click the button to begin </p>
+<button id ="btn-1" class = "my-btn"> Generate</button>
+</body>
+</html>
+<script>
+    const btn = document.querySelector('#btn-1');
+    function addParagraph() {
+      const randomNum = Math.floor(Math.random() * 100);
+      console.log("The random number is " + randomNum);
+      const newElement = document.createElement('p');
+      newElement.textContent = 'The random number here is ' + randomNum;
+      document.body.appendChild(newElement);
+      // window.reload(); // Remove this line; unnecessary
+    }
+    btn.onclick = addParagraph;
+  </script>
