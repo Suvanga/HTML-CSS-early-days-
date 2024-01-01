@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar and Boxes</title>
+  <style>
+    h4 {
+      margin: 0;
+      line-height: 60px;
+      padding-left: 10px;
+    }
+    body {
+      margin: 0px;
+    }
+    nav {
+      height: 60px;
+      background-color: navy;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      z-index: 2;
+    }
+    .box {
+      background-color: green;
+      height: 200px;
+      width: 200px;
+      margin: 20px;
+    }
+    .boxes {
+      margin-top: 80px;
+    }
+    .rel-position {
+      position: relative;
+      top: 10px;
+      z-index: 0;
+    }
+    .abs-position {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: orange;
+      top: 20px;
+      right: 30px;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h4>This is the nav bar</h4>
+  </nav>
+  <div class="boxes">
+    <div class="box rel-position">
+      <div class="abs-position"></div>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
