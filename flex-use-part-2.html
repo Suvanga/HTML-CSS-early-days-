@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Flex Box</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item">
+      <div class="subitems"></div>
+       <div class="subitems"></div>
+          <div class="subitems"></div>
+      
+    </div>
+    
+  </div>
+</body>
+
+<style>
+  .container{
+  display: flex;
+}
+
+.item{
+
+  width:100px;
+  height:100px;
+  background-color: yellow;
+  margin:5px;
+}
+
+.subitems{
+    width:15px;
+  height:15px;
+  background-color: blue;
+  margin:1px;
+}
+</style>
